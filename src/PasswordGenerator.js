@@ -42,33 +42,32 @@ const PasswordGenerator = () => {
         return password;
     }
 
-
-
-        
-
-
     return (
         <div className="container">
+            <div className="display-box">
             <div className="new-password">
                 {password}
             </div>
-                <label>
-                    Add UpperCase Letters
-                    <input type="checkbox" checked={includeUpper} onChange={(e) => setUpper(e.target.checked)}/>
-                </label>
-                <label>
-                    Add LowerCase Letters
-                    <input type="checkbox" checked={includeLower} onChange={(e) => setLower(e.target.checked)}/>
-                </label>
-                <label>
-                    Include Numbers
-                    <input type="checkbox" checked={includeNumbers} onChange={(e) => setNumbers(e.target.checked)}/>
-                </label>
-                <label>
-                    Symbols
-                    <input type="checkbox" checked={includeSpecialCharacters} onChange={(e) => setSpecialCharacters(e.target.checked)}/>
-                </label>
-                <button type="submit" value="Submit" onClick={generatePassword}>Generate Password</button>
+            <div className="selection-container">
+                <label>Add UpperCase Letters</label>
+                <input type="checkbox" className="cbox" checked={includeUpper} onChange={(e) => setUpper(e.target.checked)}/>
+            </div>
+            <div className="selection-container">
+                <label>Add LowerCase Letters</label>
+                <input type="checkbox" className="cbox" checked={includeLower} onChange={(e) => setLower(e.target.checked)}/>
+            </div>
+             <div className="selection-container">
+                <label>Include Numbers</label>
+                <input type="checkbox" className="cbox" checked={includeNumbers} onChange={(e) => setNumbers(e.target.checked)}/>
+            </div>
+            <div className="selection-container">    
+                <label>Symbols</label>
+                <input type="checkbox" className="cbox" checked={includeSpecialCharacters} onChange={(e) => setSpecialCharacters(e.target.checked)}/>
+            </div>
+            <div className="generate-password-button-container">
+                <button type="submit" value="Submit" className="generate-password-button" onClick={generatePassword}>Generate Password</button>
+                </div>
+                </div>
         </div>
     )
 }

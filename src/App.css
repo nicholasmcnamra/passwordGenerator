@@ -1,1 +1,54 @@
+.App {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: monospace;
+}
 
+.display-box {
+
+}
+
+.container {
+    background-image: linear-gradient(-200deg, #076a71 0%, #020d27 100%);
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(245, 244, 244, 0.863);
+    padding: 30px;
+}
+.selection-container {
+    color: whitesmoke;
+    padding: 20px;
+}
+
+label {
+    padding: 10px;
+}
+input {
+    float: right;
+}
+
+
+.new-password {
+    border-radius: 10px;
+    background-color:#565f58;
+    padding: 10px;
+    color: #fff;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.generate-password-button {
+    font-family: monospace;
+    padding: 5px;
+}
+
+.generate-password-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.cbox {
+    justify-content: right;
+}
